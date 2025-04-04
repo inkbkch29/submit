@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="th">
 <head>
     <base target="_top">
@@ -12,28 +12,3 @@
 </body>
 </html>
 
- -->
-
- <!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หนังสือลงรับ</title>
-</head>
-<body>
-    <h1>ข้อมูลหนังสือลงรับ</h1>
-    <div id="content">กำลังโหลดข้อมูล...</div>
-
-    <script>
-        fetch("https://script.google.com/macros/s/AKfycbxEJk26XRoq2BJleeeCApIgpP05iRrdoxDFaB0huc7qbdv2xsom497nxIMqZ1vkbS8F/exec")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("content").innerHTML = data;
-        })
-        .catch(error => {
-            document.getElementById("content").innerHTML = "เกิดข้อผิดพลาด: " + error;
-        });
-    </script>
-</body>
-</html>
